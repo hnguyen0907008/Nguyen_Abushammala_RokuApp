@@ -1,0 +1,25 @@
+{
+  "name": "Nguyen_Abushammala_RokuApp",
+  "version": "1.0.0",
+  "description": "The Flashback app is part of the Roku streaming service. Subscribers can use this app to access three separate flashback features; movies, television (tv) and music. Each of these three sections are comprised exclusively of entertainment from 1950, 1960, 1970, 1980, and 1990 respectively.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "start-server": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hnguyen0907008/Nguyen_Abushammala_RokuApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hnguyen0907008/Nguyen_Abushammala_RokuApp/issues"
+  },
+  "homepage": "https://github.com/hnguyen0907008/Nguyen_Abushammala_RokuApp#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
