@@ -1,12 +1,6 @@
 # Nguyen_Abushammala_RokuApp
 
-The Flashback app is part of the Roku streaming service. Subscribers can use this app to access three separate flashback features; movies, television (tv) and music. Each of these three sections are comprised exclusively of entertainment from 1950, 1960, 1970, 1980, and 1990 respectively.  
-
-One of Flashback's main usability features is the demarcation of the user profile. Users will be divided into two distinct categories; administrators (labeled; Parents) and Kids. Parents will have the ability to access all of Flashbacks' content and admin controls while 'Kids' will be limited to content pushed down from Flashbacks “kid-friendly content" protocol queries. Admin users will have the ability to customize settings being pushed down from Flashbacks CMS to provide a unique viewing experience for their children. These features may include, but may not be exclusive to, such things as ratings, age appropriate etc. 
-
-[Design Note - Google Doc](https://docs.google.com/document/d/1hvyWnOGrMJsgoeoaJbrue4bBemynv2qitKBChi0tKvA/edit?usp=sharing)
-
-[Dev Note - Google Doc](https://docs.google.com/document/d/1oekK48vE3wDM-P5bCPLVEY_z-24lV-mxbX_fwF_90NQ/edit?usp=sharing)
+This is all the design for how the Roku App will look.
 
 ## Team
 
