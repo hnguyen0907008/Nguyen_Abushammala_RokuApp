@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Roku </title>
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    </head>
+    <body>
+        <div id="app" class="container-fluid p-0 h-100">
+            <div class="row m-0 h-100">
+                <div class="col-7 d-none d-md-inline p-0">
+                    <img class="w-100 h-100" src="images/main.png">
+                </div>
+                <div class="col-md-5 col-sm-12 content m-auto">
+                    <div class="w-75 m-auto">
+                        <label class="h3 text-center text-white w-100">Sign in</label>
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <input class="form-control p-3" type="text" placeholder="Type your Username">
+                            </div>
+                            <div class="form-group position-relative">
+                                <input class="form-control p-3" :type="type" placeholder="Type your Password">
+                                <i class="fa fa-eye eye cursor-pointer" @click="displayPassword"></i>
+                            </div>
+                            <button class="form-control btn btn-primary" type="submit">Continue</button>
+                        </form>
+                        <label class="text-center text-white w-100">Not a memeber ? <a class="text-success text-decoration-underline" href="signup.html">Sign Up</a></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+        <script src="js/plugin.js"></script>
+    </body>
+</html>
