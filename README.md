@@ -8,6 +8,7 @@ One of Flashback's main usability features is the demarcation of the user profil
 ## Team
 
 Hien: Developer
+
 Abdalrahman: Designer
 
 ## Installation
