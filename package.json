@@ -1,0 +1,26 @@
+{
+  "name": "nguyen_abushammala_rokuapp",
+  "version": "1.0.0",
+  "description": "The Roku Flashback Streaming App",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "start-dev": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hnguyen0907008/Nguyen_Abushammala_RokuApp.git"
+  },
+  "author": "Hien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hnguyen0907008/Nguyen_Abushammala_RokuApp/issues"
+  },
+  "homepage": "https://github.com/hnguyen0907008/Nguyen_Abushammala_RokuApp#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "http-proxy-middleware": "^1.0.6",
+    "mysql": "^2.18.1"
+  }
+}
