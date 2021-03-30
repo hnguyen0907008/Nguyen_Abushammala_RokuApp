@@ -3,12 +3,22 @@ const router = express.Router();
 const connect = require("../config/sqlConfig");
 const path = require('path');
 
-
-router.get('/', (req, res) =>{
-    res.render('index', { message: "TESTING HANDLEBAR" })
+//hbs
+router.get('/parentsmovie', (req, res) =>{
+    res.render('movieindex');
 })
 
-router.get('/signin', (req, res) =>{
+router.get('/parentstv', (req, res) =>{
+    res.render('tvindex');
+})
+
+router.get('/parentsmusic', (req, res) =>{
+    res.render('musicindex');
+})
+
+//pages
+router.get('/', (req, res) =>{
+    //this is the index
     res.sendFile(path.join(__dirname, "signin.html"));
 })
 
@@ -28,12 +38,35 @@ router.get("/movies", (req, res) => {
         if (err) throw err; // not connected!
        
         // Use the connection
-        connection.query('SELECT * FROM parents_video', function (error, results) {
+        connection.query('SELECT * FROM parents_movies', function (error, results) {
           connection.release();
           if (error) throw error;
           res.json(results);
         });
     });
 })
+
+router.get("/tvs", (req, res) => {
+    connect.getConnection(function(err, connection) {
+        if (err) throw err; // not connected!
+        connection.query('SELECT * FROM parents_tv', function (error, results) {
+          connection.release();
+          if (error) throw error;
+          res.json(results);
+        });
+    });
+})
+
+router.get("/audios", (req, res) => {
+    connect.getConnection(function(err, connection) {
+        if (err) throw err; // not connected!
+        connection.query('SELECT * FROM parents_audio', function (error, results) {
+          connection.release();
+          if (error) throw error;
+          res.json(results);
+        });
+    });
+})
+
 
 module.exports = router;

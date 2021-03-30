@@ -10,79 +10,27 @@
     <body>
     <main id="app">
         <div class="container-fluid h-100">
-            <header class="text-white">
-                <nav class="row p-4">
-                    <img class="col-lg-3 col-9 image-logo" src="../images/logo.png">
-                    <div class="col-lg-6 col-sm-12 order-2 order-lg-1 mt-2">
-                        <form class="form-inline my-2 my-lg-0 w-100">
-                            <span class="dropdown-toggle">All</span>
-                            <input class="form-control w-75 search" type="search" placeholder="Search Any Movie, TV, Music">
-                            <button class="btn btn-outline-success search-button" type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                    </div>
-                    <div class="col-12 col-lg-1 order-3 order-lg-2 cursor-pointer p-lg-0 mt-3">
-                        <i class="fa fa-globe h5"></i>
-                        <span class="dropdown-toggle font-weight-bold"> English</span>
-                    </div>
-                    <div class="col-lg-2 col-3 order-1 order-lg-3 cursor-pointer float-sm-right mt-1">
-                        <img class="rounded-circle image-profile" src="../images/profile.png">
-                        <span class="dropdown-toggle"></span>
-                    </div>
-                </nav>
-                <div class="d-block clearfix w-75 mx-auto mb-3">
-                    <div class="float-left">
-                        <img class="rounded-circle" src="../images/parents.png" style="width:60px">
-                        <span class="text-info h5">Profile:</span><label class="text-white h5"> Parents </label>
-                    </div>
-                    <div class="float-right mt-3">
-                        <a href="#" class="text-success text-decoration-underline align-text-bottom">Switch to kids profile</a>
-                    </div>
-                </div>
-            </header>
+            {{> header}}
+
             <div class="main-content">
                 <div class="row text-center section font-weight-bold cursor-pointer">
-                    <div class="col-4 text-white p-3 border-bottom border-success"><a href="movie.html" class="text-white"><i class="fa fa-film"></i> Movie</a></div>
-                    <div class="col-4 p-3"><a href="tvshow.html" class="text-white"><i class="fa fa-tv"></i> TV Show</a></div>
-                    <div class="col-4 p-3"><a href="music.html" class="text-white"><i class="fa fa-music"></i> Music</a></div>
+                    <div class="col-4 p-3"><a href="/parentsmovie" class="text-white"><i class="fa fa-film"></i> Movie</a></div>
+                    <div class="col-4 p-3"><a href="/parentstv" class="text-white"><i class="fa fa-tv"></i> TV Show</a></div>
+                    <div class="col-4 p-3"><a href="/parentsmusic" class="text-white"><i class="fa fa-music"></i> Music</a></div>
                 </div>
                 <div class="container show-content">
                     <div class="ml-2 mt-4 mb-3 font-weight-bold">
-                        <span class="text-white">Keep Watching | </span><span class="text-success">See All</span>
+                        <span class="text-white">Action | Comedy | Drama |</span>
+                        <span class="text-success">See All</span>
                     </div>
                     <div class="row ml-1">
-                        {{ body }}
+                        {{{ body }}}
                     </div>
-                    <div class="ml-2 mt-1 mb-3 font-weight-bold">
-                        <span class="text-white">Recommended | </span><span class="text-success">See All</span>
-                    </div>
+                    <br><br>
                 </div>                
             </div>
-            <footer class="text-white mt-2">
-                <div class="row section p-4">
-                    <div class="col-12 col-sm-5">
-                        <img class="pb-4 image-logo" src="../images/footer-logo.png">
-                        <p>We are a technology team focused on adding value quickly and supporting continual improvement.</p>
-                        <i class="fa fa-instagram h2 mr-3 mt-2 cursor-pointer"></i>
-                        <i class="fa fa-linkedin h2 mr-3 mt-2 cursor-pointer"></i>
-                        <i class="fa fa-facebook h2 mr-3 mt-2 cursor-pointer"></i>
-                        <i class="fa fa-twitter h2 mt-2 cursor-pointer"></i>
-                    </div>
-                    <div class="col-12 col-sm-3 mt-2 mt-sm-0">
-                        <p class="pb-3 font-weight-bold h2">Contact US</p>
-                        <label class="d-block">Canada</label>
-                        <label class="d-block">+91-6361334223</label>
-                        <label class="d-block">info@roku.com</label>
-                    </div>
-                    <div class="col-12 col-sm-3 mt-2 mt-sm-0">
-                        <p class="pb-3 font-weight-bold h2">Get To Know US</p>
-                        <label class="d-block cursor-pointer">About</label>
-                        <label class="d-block cursor-pointer">FAQs</label>
-                    </div>
-                </div>
-                <div class="row text-center p-2 copyright">
-                    <p class="col-12">© Roku Flashback 2020</p>
-                </div>
-            </footer>
+            
+            {{> footer}}
         </div>
     </main>
     <script defer type="module" src="scripts/main.js"></script>
