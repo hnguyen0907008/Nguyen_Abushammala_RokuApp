@@ -1,29 +1,21 @@
 # Nguyen_Abushammala_RokuApp
 
-On this branch, I have connect to the database successfully and merge some of the design files to the app.
+On this branch, I make all the medias accessible for everyone. Users just need to click the thumbnail and the details about that movie/tv show/song will pop up.
+However, the design for the thumbnails and for the audio details are not completed. There are no audio controls either.
 
-## Team
+The workflow:
+dev.nxh.accessAllMedias - making videos and audios accessible using Vue
+dev.nxh.designAllMedias - complete the design of all medias
+dev.nxh.mediaFunctionality - adding more controls like pause, rewind, etc
+main - merge everything together. The most up-to-date branch
+
+## Author
 
 Hien: Developer
 
-Abdalrahman: Designer
-
 ## Installation
 
-Node, Sass, WAMP/MAMP
+Running on port 4000
 
-## Usage
 
-Clone the project, <code>cd</code> to your directory/download, and run the app using MAMP/WAMP.
 
-## Contributing
-
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
