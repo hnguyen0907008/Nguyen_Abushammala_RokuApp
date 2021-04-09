@@ -12,6 +12,7 @@ The workflow:
 ## Author
 
 Hien: Developer
+Abdal: Designer
 
 ## Installation
 
