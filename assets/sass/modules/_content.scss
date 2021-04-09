@@ -1,0 +1,32 @@
+.eye{
+    position: absolute;
+    right: 10px;
+    top: 30%;
+}
+
+.section{
+    background-color: #272e44;
+}
+
+.section-looking i{
+    font-size: 80px;
+    color: #fff;
+    background-color: #1d2438;
+    width: 150px;
+    height: 145px;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+.show-content img{
+    width: 245px;
+    height: 245px;
+    cursor: pointer;
+}
+
+.image-profile{
+    width: 60px;
+    height: 45px;
+    border: 1px solid #e68888;
+    outline: none;
+}

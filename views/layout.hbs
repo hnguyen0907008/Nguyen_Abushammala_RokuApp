@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Roku </title>
+        <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/main.css"> 
+    </head>
+    <body>
+    <main id="app">
+        <div class="container-fluid h-100">
+            {{> header}}
+
+            <div class="main-content">
+                <div class="row text-center section font-weight-bold cursor-pointer">
+                    <div class="col-4 p-3"><a href="/parentsmovie" class="text-white"><i class="fa fa-film"></i> Movie</a></div>
+                    <div class="col-4 p-3"><a href="/parentstv" class="text-white"><i class="fa fa-tv"></i> TV Show</a></div>
+                    <div class="col-4 p-3"><a href="/parentsmusic" class="text-white"><i class="fa fa-music"></i> Music</a></div>
+                </div>
+                <div class="container show-content">
+                    <div class="ml-2 mt-4 mb-3 font-weight-bold">
+                        <span class="text-white">Action | Comedy | Drama |</span>
+                        <span class="text-success">See All</span>
+                    </div>
+                    <div class="row ml-1">
+                        {{{ body }}}
+                    </div>
+                    <br><br>
+                </div>                
+            </div>
+            
+            {{> footer}}
+        </div>
+    </main>
+    <script defer type="module" src="scripts/main.js"></script>
+    </body>
+</html>
+            
