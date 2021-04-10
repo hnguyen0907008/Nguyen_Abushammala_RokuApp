@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Mar 06, 2021 at 03:22 PM
+-- Generation Time: Apr 10, 2021 at 02:36 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.4.2
 
@@ -90,69 +90,68 @@ INSERT INTO `parents_audio` (`id`, `title`, `cover`, `audio_src`, `year`, `artis
 -- --------------------------------------------------------
 
 --
--- Table structure for table `parents_audio_genre`
+-- Table structure for table `parents_movies`
 --
 
-CREATE TABLE `parents_audio_genre` (
-  `audio_genre_id` int(10) NOT NULL,
-  `audio_id` int(10) NOT NULL,
-  `genre_id` int(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `parents_video`
---
-
-CREATE TABLE `parents_video` (
-  `video_id` mediumint(8) UNSIGNED NOT NULL,
-  `video_cover` varchar(75) NOT NULL DEFAULT 'cover_default.jpg',
-  `video_title` varchar(125) NOT NULL,
-  `video_year` varchar(5) NOT NULL,
-  `video_runtime` varchar(25) NOT NULL,
-  `video_storyline` text NOT NULL,
-  `video_trailer` varchar(75) NOT NULL DEFAULT 'trailer_default.jpg',
+CREATE TABLE `parents_movies` (
+  `movie_id` mediumint(8) UNSIGNED NOT NULL,
+  `movie_cover` varchar(75) NOT NULL DEFAULT 'cover_default.jpg',
+  `movie_title` varchar(125) NOT NULL,
+  `movie_year` varchar(5) NOT NULL,
+  `movie_runtime` varchar(25) NOT NULL,
+  `movie_storyline` text NOT NULL,
+  `movie_trailer` varchar(75) NOT NULL DEFAULT 'trailer_default.jpg',
   `video_type` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `parents_video`
+-- Dumping data for table `parents_movies`
 --
 
-INSERT INTO `parents_video` (`video_id`, `video_cover`, `video_title`, `video_year`, `video_runtime`, `video_storyline`, `video_trailer`, `video_type`) VALUES
+INSERT INTO `parents_movies` (`movie_id`, `movie_cover`, `movie_title`, `movie_year`, `movie_runtime`, `movie_storyline`, `movie_trailer`, `video_type`) VALUES
 (1, '1.png', 'Monkey Trouble', '1994', '2h 16m', 'A young girl, Eva, befriends a monkey named Dodger and performs an entertainment act with him on the street. However, she soon finds out that Dodger is in fact a trained pickpocket.', 'monkey.mp4', 'movie'),
 (2, '2.png', 'After', '1999', '2h', 'Lorem Ipsum dolor.', 'after.mp4', 'movie'),
-(3, '3.png', 'The Wonder Years', '1988', '6 Seasons', 'With a dry sense of humour and the insight one gains with maturity, a grown-up Kevin provides funny commentary on himself as a young boy trying to cope with the bizarre world of a teenager.', 'wonder_years.mp4', 'tv'),
-(4, '4.png', 'Men In Black', '1997', '1h 40m', 'K and J, (the men in black) are the scum-fighting super-agents; their latest mission is to save the world from a total intergalactic disaster.', 'mib.mp4', 'movie'),
-(5, '5.png', 'Seinfield', '1989', '9 Seasons', 'Stand-up comedian Jerry Seinfeld wrestles with life\'s most perplexing yet trivial questions with his eccentric friends George, Elaine and Kramer.', 'seinfield.mp4', 'tv'),
-(6, '6.png', 'Dream On', '1990', '6 Seasons', 'The show was also significant for being one of the first American sitcoms to use uncensored profanity and nudity. Dream On first aired July 1990 on HBO, and was cancelled by HBO in March 1996.', 'Hacksaw.mp4', 'tv'),
-(7, '7.png', 'The Hogan Family', '1986', '6 Seasons', 'It starts out as a standard family sitcom called \"Valerie\" about a mom juggling the demands of work, three boys and a frequently absent airline pilot husband. Then after star Valerie Harper has a falling-out with producers, her character is killed off. Enter Sandy Duncan as the live-in aunt and surrogate mother figure, which leads to renaming the show first \"Valerie\'s Family\" and then \"The Hogan Family.\"', 'hogan.mp4', 'tv'),
-(8, '8.png', 'Just the Ten of Us', '1988', '47 Episodes', 'A schoolteacher, his pregnant wife and their seven children move West.', 'tenofus.mp4', 'tv'),
-(9, '9.png', 'The Goonies', '1985', '2h', 'A group of west coast kids facing their last days together before a development paves over their homes stumble onto evidence of pirate\'s treasure attracting the attention of a family of criminals.', 'eddie.mp4', 'movie'),
-(11, '11.png', 'Wings', '1990', '8 Seasons', 'Two brothers, Joe and Brian Hackett, run a one-plane commuter service from a small Nantucket airport. Along with Joe\'s on-again/off-again girlfriend, there are more hilarious and eccentric characters who work out of or at the airport.', 'wings.mp4', 'tv'),
-(12, '12.png', 'Boy Meets World', '1993', '1h 57m', 'With the help of true love Topanga, best friend Shawn and teacher Mr. Feeny, Cory Matthews juggles school, friends and romance. The series, a popular Friday night staple on ABC for seven seasons, began with Cory in the sixth grade and follows him and his entourage through their college years.', 'boy.mp4', 'movie'),
-(13, '13.png', 'The Green Mile', '1999', '2h', 'Paul Edgecomb, the head guard of a prison, meets an inmate, John Coffey, a black man who is accused of murdering two girls. His life changes drastically when he discovers that John has a special gift.', 'greenmile.mp4', 'movie'),
-(14, '14.png', 'Point Break', '1991', '1h 46m', 'FBI agent Johnny Utah infiltrates a group of surfers involved in a number of bank robberies. However, things get complicated when he befriends the gang\'s leader, Bodhi.', 'pointbreak.mp4', 'movie'),
-(15, '15.png', 'Waterworld', '1995', '2h', 'The polar ice caps have melted down and most of Earth is underwater. In this situation, a mutated mariner fights starvation and reluctantly helps a woman and a young girl find dry land.', 'water.mp4', 'movie'),
-(16, '16.png', 'How to Marry a Millionaire', '1953', '1h 30m', 'Drama movie about three women who are tired of cheap men and a lack of money. They intend to use all their talents to trap and marry three eligible millionaires, but find true love in the process.\r\n', 'cinemascope.mp4', 'movie'),
-(17, '17.png', 'Groundhog Day', '1993', '2h ', 'Phil, a self-centred weatherman, goes to the town of Punxsutawney for an assignment. He is later shocked when he wakes up the next morning and realises that he is reliving the same day over and over.', 'groundhog.mp4', 'movie'),
-(18, '18.png', 'A Family for Joe', '1990', '1 Season', 'A Family for Joe is an American sitcom that starred Robert Mitchum in the title role. It started out as a television movie that aired NBC on February 25, 1990, before turning it into a series that lasted from March 24 until August 19, 1990. Nine episodes of the series were filmed.', 'joe.mp4', 'tv'),
-(19, '19.png', 'Clarissa Explains It All', '1991', '5 Seasons', 'In the series, Clarissa Darling (Melissa Joan Hart), is a teenager who addresses the audience directly to explain the things that are happening in her life, dealing with typical adolescent concerns such as school, boys, pimples, wearing her first training bra, and an annoying younger brother.', 'clarissa.mp4', 'tv'),
-(20, '20.png', 'Star Trek: The Next Generation', '1987', '7 Seasons', 'Set almost 100 years after Captain Kirk\'s five-year mission, a new generation of Starfleet officers set off in the U.S.S. Enterprise-D on their own mission to go where no one has gone before.', 'star_trek.mp4', 'tv'),
-(21, '21.png', 'The Cosby Show', '1984', '8 Seasons', 'Image result for the cosby show summary\r\n\"The Cosby Show\" centers on the lives of the Huxtables: obstetrician Cliff and his lawyer wife Claire, their daughters Sondra, Denise, Vanessa and Rudy, and son Theo. Based on the standup comedy of Bill Cosby, the show focused on his observations of family life.', 'cosby.mp4', 'tv');
+(3, '4.png', 'Men In Black', '1997', '1h 40m', 'K and J, (the men in black) are the scum-fighting super-agents; their latest mission is to save the world from a total intergalactic disaster.', 'mib.mp4', 'movie'),
+(4, '9.png', 'The Goonies', '1985', '2h', 'A group of west coast kids facing their last days together before a development paves over their homes stumble onto evidence of pirate\'s treasure attracting the attention of a family of criminals.', 'eddie.mp4', 'movie'),
+(5, '12.png', 'Boy Meets World', '1993', '1h 57m', 'With the help of true love Topanga, best friend Shawn and teacher Mr. Feeny, Cory Matthews juggles school, friends and romance. The series, a popular Friday night staple on ABC for seven seasons, began with Cory in the sixth grade and follows him and his entourage through their college years.', 'boy.mp4', 'movie'),
+(6, '13.png', 'The Green Mile', '1999', '2h', 'Paul Edgecomb, the head guard of a prison, meets an inmate, John Coffey, a black man who is accused of murdering two girls. His life changes drastically when he discovers that John has a special gift.', 'greenmile.mp4', 'movie'),
+(7, '14.png', 'Point Break', '1991', '1h 46m', 'FBI agent Johnny Utah infiltrates a group of surfers involved in a number of bank robberies. However, things get complicated when he befriends the gang\'s leader, Bodhi.', 'pointbreak.mp4', 'movie'),
+(8, '15.png', 'Waterworld', '1995', '2h', 'The polar ice caps have melted down and most of Earth is underwater. In this situation, a mutated mariner fights starvation and reluctantly helps a woman and a young girl find dry land.', 'water.mp4', 'movie'),
+(9, '16.png', 'How to Marry a Millionaire', '1953', '1h 30m', 'Drama movie about three women who are tired of cheap men and a lack of money. They intend to use all their talents to trap and marry three eligible millionaires, but find true love in the process.\r\n', 'cinemascope.mp4', 'movie'),
+(10, '17.png', 'Groundhog Day', '1993', '2h ', 'Phil, a self-centred weatherman, goes to the town of Punxsutawney for an assignment. He is later shocked when he wakes up the next morning and realises that he is reliving the same day over and over.', 'groundhog.mp4', 'movie');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `parents_video_genre`
+-- Table structure for table `parents_tv`
 --
 
-CREATE TABLE `parents_video_genre` (
-  `video_genre_id` int(10) NOT NULL,
-  `video_id` int(10) NOT NULL,
-  `genre_id` int(10) NOT NULL
+CREATE TABLE `parents_tv` (
+  `tv_id` mediumint(8) UNSIGNED NOT NULL,
+  `tv_cover` varchar(75) NOT NULL DEFAULT 'cover_default.jpg',
+  `tv_title` varchar(125) NOT NULL,
+  `tv_year` varchar(5) NOT NULL,
+  `tv_runtime` varchar(25) NOT NULL,
+  `tv_storyline` text NOT NULL,
+  `tv_trailer` varchar(75) NOT NULL DEFAULT 'trailer_default.jpg',
+  `video_type` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `parents_tv`
+--
+
+INSERT INTO `parents_tv` (`tv_id`, `tv_cover`, `tv_title`, `tv_year`, `tv_runtime`, `tv_storyline`, `tv_trailer`, `video_type`) VALUES
+(1, '3.png', 'The Wonder Years', '1988', '6 Seasons', 'With a dry sense of humour and the insight one gains with maturity, a grown-up Kevin provides funny commentary on himself as a young boy trying to cope with the bizarre world of a teenager.', 'wonder_years.mp4', 'tv'),
+(2, '5.png', 'Seinfield', '1989', '9 Seasons', 'Stand-up comedian Jerry Seinfeld wrestles with life\'s most perplexing yet trivial questions with his eccentric friends George, Elaine and Kramer.', 'seinfield.mp4', 'tv'),
+(3, '6.png', 'Dream On', '1990', '6 Seasons', 'The show was also significant for being one of the first American sitcoms to use uncensored profanity and nudity. Dream On first aired July 1990 on HBO, and was cancelled by HBO in March 1996.', 'Hacksaw.mp4', 'tv'),
+(4, '7.png', 'The Hogan Family', '1986', '6 Seasons', 'It starts out as a standard family sitcom called \"Valerie\" about a mom juggling the demands of work, three boys and a frequently absent airline pilot husband. Then after star Valerie Harper has a falling-out with producers, her character is killed off. Enter Sandy Duncan as the live-in aunt and surrogate mother figure, which leads to renaming the show first \"Valerie\'s Family\" and then \"The Hogan Family.\"', 'hogan.mp4', 'tv'),
+(5, '8.png', 'Just the Ten of Us', '1988', '47 Episodes', 'A schoolteacher, his pregnant wife and their seven children move West.', 'tenofus.mp4', 'tv'),
+(6, '11.png', 'Wings', '1990', '8 Seasons', 'Two brothers, Joe and Brian Hackett, run a one-plane commuter service from a small Nantucket airport. Along with Joe\'s on-again/off-again girlfriend, there are more hilarious and eccentric characters who work out of or at the airport.', 'wings.mp4', 'tv'),
+(7, '18.png', 'A Family for Joe', '1990', '1 Season', 'A Family for Joe is an American sitcom that starred Robert Mitchum in the title role. It started out as a television movie that aired NBC on February 25, 1990, before turning it into a series that lasted from March 24 until August 19, 1990. Nine episodes of the series were filmed.', 'joe.mp4', 'tv'),
+(8, '19.png', 'Clarissa Explains It All', '1991', '5 Seasons', 'In the series, Clarissa Darling (Melissa Joan Hart), is a teenager who addresses the audience directly to explain the things that are happening in her life, dealing with typical adolescent concerns such as school, boys, pimples, wearing her first training bra, and an annoying younger brother.', 'clarissa.mp4', 'tv'),
+(9, '20.png', 'Star Trek: The Next Generation', '1987', '7 Seasons', 'Set almost 100 years after Captain Kirk\'s five-year mission, a new generation of Starfleet officers set off in the U.S.S. Enterprise-D on their own mission to go where no one has gone before.', 'star_trek.mp4', 'tv'),
+(10, '21.png', 'The Cosby Show', '1984', '8 Seasons', 'Image result for the cosby show summary\r\n\"The Cosby Show\" centers on the lives of the Huxtables: obstetrician Cliff and his lawyer wife Claire, their daughters Sondra, Denise, Vanessa and Rudy, and son Theo. Based on the standup comedy of Bill Cosby, the show focused on his observations of family life.', 'cosby.mp4', 'tv');
 
 -- --------------------------------------------------------
 
@@ -241,26 +240,10 @@ ALTER TABLE `parents_audio`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `parents_audio_genre`
+-- Indexes for table `parents_movies`
 --
-ALTER TABLE `parents_audio_genre`
-  ADD PRIMARY KEY (`audio_genre_id`),
-  ADD KEY `audio` (`audio_id`),
-  ADD KEY `audiogenre` (`genre_id`);
-
---
--- Indexes for table `parents_video`
---
-ALTER TABLE `parents_video`
-  ADD PRIMARY KEY (`video_id`);
-
---
--- Indexes for table `parents_video_genre`
---
-ALTER TABLE `parents_video_genre`
-  ADD PRIMARY KEY (`video_genre_id`),
-  ADD KEY `video` (`video_id`),
-  ADD KEY `genre` (`genre_id`);
+ALTER TABLE `parents_movies`
+  ADD PRIMARY KEY (`movie_id`);
 
 --
 -- Indexes for table `tbl_arating`
@@ -288,13 +271,13 @@ ALTER TABLE `video_genre`
 -- AUTO_INCREMENT for table `audio_genre`
 --
 ALTER TABLE `audio_genre`
-  MODIFY `genre_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `genre_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `kids_audio`
 --
 ALTER TABLE `kids_audio`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `parents_audio`
@@ -303,22 +286,10 @@ ALTER TABLE `parents_audio`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `parents_audio_genre`
+-- AUTO_INCREMENT for table `parents_movies`
 --
-ALTER TABLE `parents_audio_genre`
-  MODIFY `audio_genre_id` int(10) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `parents_video`
---
-ALTER TABLE `parents_video`
-  MODIFY `video_id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
-
---
--- AUTO_INCREMENT for table `parents_video_genre`
---
-ALTER TABLE `parents_video_genre`
-  MODIFY `video_genre_id` int(10) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `parents_movies`
+  MODIFY `movie_id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `tbl_arating`
@@ -336,14 +307,4 @@ ALTER TABLE `tbl_user`
 -- AUTO_INCREMENT for table `video_genre`
 --
 ALTER TABLE `video_genre`
-  MODIFY `genre_id` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `parents_audio_genre`
---
-ALTER TABLE `parents_audio_genre`
-  ADD CONSTRAINT `parents_audio_genre_ibfk_1` FOREIGN KEY (`audio_id`) REFERENCES `parents_audio` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  MODIFY `genre_id` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
