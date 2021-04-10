@@ -12,8 +12,8 @@ Future branches
 
 ## Author
 
-Hien: Developer
-Abdal: Designer
+- Hien: Developer
+- Abdal: Designer
 
 ## Installation
 
