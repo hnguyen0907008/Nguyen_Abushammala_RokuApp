@@ -20,3 +20,6 @@ Running on port 4000
 
 ## Dev Notes
 [Developer Note - Google Doc](https://docs.google.com/document/d/1oekK48vE3wDM-P5bCPLVEY_z-24lV-mxbX_fwF_90NQ/edit?usp=sharing)
+
+## Des Notes
+[Designer Note - Google Doc](https://docs.google.com/document/d/1R5b7_w3MiHAuMEkBoRvKxtx9iVO1UiUysOlxoLwK8ZI/edit?usp=sharing)
