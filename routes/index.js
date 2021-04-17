@@ -48,4 +48,26 @@ router.get("/moviesparent/:id", (req, res) => {
     });
 })
 
+router.get("/tvsparent", (req, res) => {
+    connect.getConnection(function(err, connection) {
+        if (err) throw err; // not connected!
+        connection.query('SELECT * FROM parents_tv', function (error, results) {
+          connection.release();
+          if (error) throw error;
+          res.json(results);
+        });
+    });
+})
+
+router.get("/musicsparent", (req, res) => {
+    connect.getConnection(function(err, connection) {
+        if (err) throw err; // not connected!
+        connection.query('SELECT * FROM parents_audio', function (error, results) {
+          connection.release();
+          if (error) throw error;
+          res.json(results);
+        });
+    });
+})
+
 module.exports = router;

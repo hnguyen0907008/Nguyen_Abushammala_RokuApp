@@ -17,12 +17,15 @@ export default {
     },
     //<img :src='"images/" + movie.movie_cover' alt="media thumb">
     template:`
-        <div class="movie-thumb">
+        <div class="movie-thumb" @click.prevent= "playMedia()">
             <img :src="'images/' + movie.movie_cover" :alt='movie.movie_cover + "image"' id="thumbnail"></a>
         </div>    
     `,
 
     methods: {
-        
+        playMedia(){
+            console.log('pushmedia');
+            this.$router.push({ name: "home", params: { currentuser: this.liveuser }})
+        }
     }
 }
