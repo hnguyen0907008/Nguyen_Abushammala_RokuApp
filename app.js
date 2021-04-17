@@ -6,6 +6,9 @@ const app = express();
 
 const port = process.env.PORT || 4000;
 
+hbs.registerPartials(path.join(__dirname, '/views/templates'));
+hbs.partials = hbs.templates;
+
 app.use((req, res, next) => {  
     next(); // => send the user to the route they requested
 });

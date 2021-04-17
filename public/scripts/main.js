@@ -8,7 +8,7 @@ import TheMovieThumb from './modules/TheMovieThumbnailComponent.js';
         },
 
         created: function() {
-            fetch('/movies')
+            fetch('/moviesparent')
                 .then(res => res.json())
                 .then(data => {
                     //show data in sql table
