@@ -4,8 +4,8 @@ Roku Flashback is an streaming app designed to display movies, tv shows and musi
 
 ## Author
 
-Hien: Developer
-Abdalrahman: Designer
+- Hien: Developer
+- Abdalrahman: Designer
 
 ## Port
 
