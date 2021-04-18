@@ -1,24 +1,29 @@
 # Nguyen_Abushammala_RokuApp
 
-On this branch, I make all the medias accessible for everyone. Users just need to click the thumbnail and the details about that movie/tv show/song will pop up in a lightbox. 
-However, the design for the thumbnails and for the audio details are not completed. 
-
-Current branch:
-- dev.nxh.accessAllMedias - making videos and audios accessible using Vue
-
-Future branches
-- dev.nxh.designAllMedias - complete the design of all medias
-- dev.nxh.mediaFunctionality - adding more controls like pause, rewind, etc
+Roku Flashback is an streaming app designed to display movies, tv shows and music from the 50's, 60's, 70's, 80's and 90's. It has different functionalities such as profiles that filter the content depending on the users age.
 
 ## Author
 
 Hien: Developer
+Abdalrahman: Designer
 
-## Installation
+## Port
 
 Running on port 4000
 
+## Installation
+Please install these packages to run the project
+- Node Modules 
+- HBS
+- MySQL
+- Express
+
+## Media Files
+This is the folder that contains all the media files. Please extract all 3 folders: movies, tvshows, audio and put them into the public folder.
+[Get The Medias Here] (https://drive.google.com/drive/folders/1s5QWSCZses8kXj8V5-ubtPvEqwgydUZb?usp=sharing)
+
 ## Dev Notes
+Here is the roadmap for this project:
 [Developer Note - Google Doc](https://docs.google.com/document/d/1oekK48vE3wDM-P5bCPLVEY_z-24lV-mxbX_fwF_90NQ/edit?usp=sharing)
 
 ## Des Notes
