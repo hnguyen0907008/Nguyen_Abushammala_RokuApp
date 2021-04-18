@@ -23,7 +23,8 @@ router.get('/', (req, res) =>{
 })
 
 router.get('/profile', (req, res) =>{
-    res.sendFile(path.join(__dirname, "profile.html"));
+    //res.sendFile(path.join(__dirname, "profile.html"));
+    res.render('chooseusers');
 })
 
 router.get('/looking', (req, res) =>{
@@ -61,6 +62,18 @@ router.get("/audios", (req, res) => {
     connect.getConnection(function(err, connection) {
         if (err) throw err; // not connected!
         connection.query('SELECT * FROM parents_audio', function (error, results) {
+          connection.release();
+          if (error) throw error;
+          res.json(results);
+        });
+    });
+})
+
+//connect to users
+router.get("/getusers", (req, res) => {
+    connect.getConnection(function(err, connection) {
+        if (err) throw err; 
+        connection.query('SELECT user_id, user_admin, user_access, user_avatar FROM tbl_user', function (error, results) {
           connection.release();
           if (error) throw error;
           res.json(results);
