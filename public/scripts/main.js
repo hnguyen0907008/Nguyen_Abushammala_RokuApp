@@ -2,9 +2,12 @@ import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.esm.browser.js
 import TheMovieThumb from './modules/TheMovieThumbnailComponent.js';
 import TheTVThumb from './modules/TheTVThumbnailComponent.js';
 import TheMusicThumb from './modules/TheMusicThumbnailComponent.js';
+import AllUsers from './modules/TheAllUsersComponent.js'
+//import LoginPage from "./modules/TheLoginComponent.js";
+//import HomePage from "./modules/HomePageComponent.js";
 
 (()=> {
-    const vm = new Vue({
+    const vm = new Vue({    
         data: {
             allMovies: [],
             allTVs: [],
@@ -35,7 +38,7 @@ import TheMusicThumb from './modules/TheMusicThumbnailComponent.js';
                     console.table(data);
                     this.allMusics = data;
             })
-            .catch(err => console.error(err));
+            .catch(err => console.error(err))
         }, //end created
 
         methods: {
@@ -45,7 +48,8 @@ import TheMusicThumb from './modules/TheMusicThumbnailComponent.js';
         components: {
             moviethumb: TheMovieThumb,
             tvthumb: TheTVThumb,
-            musicthumb: TheMusicThumb
+            musicthumb: TheMusicThumb,
+            allusersview: AllUsers
         }
     }).$mount("#app");
 })();
