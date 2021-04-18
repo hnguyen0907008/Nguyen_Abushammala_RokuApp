@@ -6,8 +6,8 @@ After submitting, I actually removed some unecessary css files and pushed it on 
 
 ## Author
 
-Hien: Developer
-Abdalrahman: Designer
+- Hien: Developer
+- Abdalrahman: Designer
 
 ## Port
 
@@ -19,6 +19,7 @@ Please install these packages to run the project
 - HBS
 - MySQL
 - Express
+Activate MAMP/WAMP before running the project on localhost
 
 ## Media Files
 This is the folder that contains all the media files. Please extract all 3 folders: movies, tvshows, audio and put them into the public folder.
