@@ -23,7 +23,7 @@ Activate MAMP/WAMP before running the project on localhost
 
 ## Media Files
 This is the folder that contains all the media files. Please extract all 3 folders: movies, tvshows, audio and put them into the public folder.
-[Get The Medias Here] (https://drive.google.com/drive/folders/1s5QWSCZses8kXj8V5-ubtPvEqwgydUZb?usp=sharing)
+[Get The Medias Here](https://drive.google.com/drive/folders/1s5QWSCZses8kXj8V5-ubtPvEqwgydUZb?usp=sharing)
 
 ## Dev Notes
 Here is the roadmap for this project:
