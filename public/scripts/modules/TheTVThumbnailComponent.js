@@ -17,7 +17,7 @@ export default {
     },
 
     template:`
-    <div @click="logClicked" class="info">
+    <div @click="logClicked">
         <section class="bio-data" :class="{'show-bio' : showBioData}">
             <span class="close-lb" @click.prevent="showTVData(tv)" :class="{'button-modifier' : removeAformat}">x</span>
             

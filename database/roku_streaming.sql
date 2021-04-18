@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Apr 18, 2021 at 04:34 AM
+-- Generation Time: Apr 18, 2021 at 04:12 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.4.2
 
@@ -170,7 +170,7 @@ CREATE TABLE `tbl_arating` (
 
 INSERT INTO `tbl_arating` (`arating_id`, `arating_name`, `arating_desc`) VALUES
 (1, 'G', 'G – General Audiences\r\nAll ages admitted. Nothing that would offend parents for viewing by children. '),
-(2, 'PG', 'PG – Parental Guidance Suggested\r\nSome material may not be suitable for children. Parents urged to give  	&ldquo;parental guidance&rdquo;. '),
+(2, 'PG', 'PG – Parental Guidance Suggested\r\nSome material may not be suitable for children. Parents urged to give    &ldquo;parental guidance&rdquo;. '),
 (3, 'PG-13', 'PG-13 – Parents Strongly Cautioned\r\nSome material may be inappropriate for children under 13. Parents are urged to be cautious. Some material may be inappropriate for pre-teenagers.'),
 (4, 'R', 'R – Restricted\r\nUnder 17 requires accompanying parent or adult guardian. Contains some adult material. Parents are urged to learn more about the film before taking their young children with them. '),
 (5, 'NC-17', 'NC-17 – Adults Only\r\nNo One 17 and Under Admitted. Clearly adult. Children are not admitted. ');
@@ -199,8 +199,8 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`user_id`, `user_fname`, `user_name`, `user_pass`, `user_email`, `user_date`, `user_ip`, `user_admin`, `user_access`, `user_avatar`) VALUES
-(1, 'parents', 'user1', '123', 'parent@gmail.com', '2021-04-12 18:07:35', '::1', 1, 5, 'parents.png'),
-(2, 'kids', 'user2', '123', 'kid@gmail.com', '2021-04-05 18:23:11', 'no', 0, 4, 'kids.png');
+(1, 'trevor', 'user1', 'password', 't@t.com', '2019-02-01 19:07:35', '::1', 1, 5, 'parents.png'),
+(2, 'isabelle', 'user2', '123', 'i@i.ca', '2021-04-17 18:23:11', 'no', 0, NULL, 'kids.png');
 
 -- --------------------------------------------------------
 

@@ -18,7 +18,7 @@ export default {
     //<div class="movie-thumb">s
     //<img :src='"images/" + movie.movie_cover' alt="media thumb">
     template:`
-    <div @click="logClicked" class="info">
+    <div class="info" @click="logClicked">
         <section class="bio-data" :class="{'show-bio' : showBioData}">
             <span class="close-lb" @click.prevent="showMovieData(movie)" :class="{'button-modifier' : removeAformat}">x</span>
             

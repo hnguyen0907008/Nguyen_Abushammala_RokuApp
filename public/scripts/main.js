@@ -3,6 +3,7 @@ import TheMovieThumb from './modules/TheMovieThumbnailComponent.js';
 import TheTVThumb from './modules/TheTVThumbnailComponent.js';
 import TheMusicThumb from './modules/TheMusicThumbnailComponent.js';
 import AllUsers from './modules/TheAllUsersComponent.js'
+
 //import LoginPage from "./modules/TheLoginComponent.js";
 //import HomePage from "./modules/HomePageComponent.js";
 
@@ -11,7 +12,8 @@ import AllUsers from './modules/TheAllUsersComponent.js'
         data: {
             allMovies: [],
             allTVs: [],
-            allMusics: []
+            allMusics: [],
+            userList: []
         },
 
         created: function() {

@@ -10673,13 +10673,6 @@ nav .fa-search {
   outline: none;
 }
 
-.movie-thumb {
-  padding: 10px;
-  cursor: pointer;
-  display: inline-block;
-  width: 180px;
-}
-
 footer .copyright {
   background-color: #21283b;
 }
@@ -10695,6 +10688,8 @@ footer .copyright {
 .show-bio {
   display: inline-block !important;
   position: absolute;
+  width: 100%;
+  overflow-x: scroll;
   padding: 20px;
   background-color: black;
   margin: 0 auto;
@@ -10718,19 +10713,7 @@ footer .copyright {
   }
 }
 
-.info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.info .video-layout {
+.video-layout {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10743,18 +10726,18 @@ footer .copyright {
           justify-content: space-between;
 }
 
-.info .video-layout .video-details h3 {
+.video-layout .video-details h3 {
   font-size: 1.2em;
 }
 
-.info .video-layout video {
+.video-layout video {
   width: 100%;
   margin: 0 auto;
   margin-top: 20px;
 }
 
 @media (min-width: 1024px) {
-  .info .video-layout video {
+  .video-layout video {
     width: 60%;
   }
 }
@@ -10773,5 +10756,65 @@ footer .copyright {
 
 .close-lb:hover {
   opacity: 1;
+}
+
+.button-modifier {
+  text-decoration: none;
+}
+
+.bio-data {
+  display: none;
+}
+
+.show-audio {
+  display: inline-block !important;
+  position: absolute;
+  padding: 40px;
+  background-color: black;
+  margin: 0 auto;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.album-cover {
+  padding: 10px;
+  color: white;
+  text-transform: capitalize;
+}
+
+.audio-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.audio-layout .audio-details h3 {
+  font-size: 1.2em;
+  margin-top: 30px;
+}
+
+.audio-layout audio {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.movie-thumb {
+  padding: 10px;
+  cursor: pointer;
+  width: 180px;
 }
 /*# sourceMappingURL=main.css.map */

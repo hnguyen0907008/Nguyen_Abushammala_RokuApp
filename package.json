@@ -19,7 +19,7 @@
   "homepage": "https://github.com/hnguyen0907008/Nguyen_Abushammala_RokuApp#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "hbs": "^4.1.1",
+    "hbs": "^4.1.2",
     "http-proxy-middleware": "^1.0.6",
     "mysql": "^2.18.1"
   }

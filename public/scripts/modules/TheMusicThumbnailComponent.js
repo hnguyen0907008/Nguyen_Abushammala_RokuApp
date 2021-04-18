@@ -5,7 +5,7 @@ export default {
     data: function(){
         return{
             removeAformat: true,
-            showBioData: false,
+            showAudDetails: false,
             currentAudioData: {},
             title: this.audio.title,
             cover: this.audio.cover,
@@ -15,14 +15,16 @@ export default {
     },
 
     template:`
-    <div @click="logClicked" class="info">
-        <section class="bio-data" :class="{'show-bio' : showBioData}">
+    <div @click="logClicked">
+        <section class="bio-data" :class="{'show-audio' : showAudDetails}">
             <span class="close-lb" @click.prevent="showAudioData(audio)" :class="{'button-modifier' : removeAformat}">x</span>
             
-            <div class="video-layout">
-                <div class="video-details">
+            <div class="audio-layout">
+                <div class="audio-details">
+                    <img :src="'images/' + audio.cover" :alt='audio.cover + "cover"'>
                     <h3>{{ audio.title }} - {{ audio.artist }}</h3>
                     <p>Released: {{ audio.year }}</p>
+                    <p>Artist: {{ audio.artist }}</p>
                 </div>
 
                 <audio controls :src="'audio/' + audio.audio_src" type="mp3">
@@ -33,6 +35,7 @@ export default {
 
         <div class="album-cover">
             <a href="" @click.prevent="showAudioData(audio)" :class="{'button-modifier' : removeAformat}"><img :src="'images/' + audio.cover" :alt='audio.cover + "cover"'></a>
+            <p>{{ audio.title }}</p>
         </div>    
     </div>
     `,
@@ -49,7 +52,7 @@ export default {
 
         showAudioData(target) {
             console.log('clicked to see audio details', target, target.name);
-            this.showBioData = this.showBioData ? false : true
+            this.showAudDetails = this.showAudDetails ? false : true
             this.currentAudioData = target;
         }
     }

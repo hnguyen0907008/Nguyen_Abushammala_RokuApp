@@ -5,6 +5,8 @@
 .show-bio { 
     display: inline-block !important;
     position: absolute;
+    width:100%;
+    overflow-x:scroll;
     padding: 20px;
     background-color: black;
     margin: 0 auto;
@@ -20,30 +22,21 @@
     }
 }
 
-.info{
+.video-layout{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-    .video-layout{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        .video-details{
-            h3{
-                font-size: 1.2em;
-            }
-            p{
-                //styling
-            }
+    justify-content: space-between;
+    .video-details{
+        h3{
+            font-size: 1.2em;
         }
-        video{
-            width: 100%;
-            margin: 0 auto;
-            margin-top: 20px;
-            @include desktop{
-                width: 60%;
-            }
+    }
+    video{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+        @include desktop{
+            width: 60%;
         }
     }
 }

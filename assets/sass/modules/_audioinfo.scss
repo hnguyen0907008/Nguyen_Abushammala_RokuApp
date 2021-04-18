@@ -1,0 +1,40 @@
+.button-modifier { text-decoration: none; }
+
+.bio-data { display: none; }
+
+.show-audio { 
+    display: inline-block !important;
+    position: absolute;
+    padding: 40px;
+    background-color: black;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.album-cover{
+    padding: 10px;
+    color: white;
+    text-transform: capitalize;
+}
+
+
+.audio-layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .audio-details{
+        h3{
+            font-size: 1.2em;
+            margin-top: 30px;
+        }
+    }
+    audio{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+
