@@ -5,7 +5,8 @@ However, the design for the thumbnails and for the audio details are not complet
 
 ## Author
 
-Hien: Developer
+- Hien: Developer
+- Abdal: Designer
 
 ## Installation
 
