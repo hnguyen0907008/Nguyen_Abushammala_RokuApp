@@ -2,8 +2,6 @@
 
 Roku Flashback is an streaming app designed to display movies, tv shows and music from the 50's, 60's, 70's, 80's and 90's. It has different functionalities such as profiles that filter the content depending on the users age.
 
-After submitting, I actually removed some unecessary css files and pushed it on Sunday to reduce the file size.
-
 ## Author
 
 - Hien: Developer
