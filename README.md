@@ -12,12 +12,11 @@ Roku Flashback is an streaming app designed to display movies, tv shows and musi
 Running on port 4000
 
 ## Installation
-Please install these packages to run the project
+Activate MAMP/WAMP before running the project on localhost. Please install these packages to run the project
 - Node Modules 
 - HBS
 - MySQL
 - Express
-Activate MAMP/WAMP before running the project on localhost
 
 ## Media Files
 This is the folder that contains all the media files. Please extract all 3 folders: movies, tvshows, audio and put them into the public folder.
