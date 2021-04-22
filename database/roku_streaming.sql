@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Apr 10, 2021 at 02:36 AM
+-- Generation Time: Apr 18, 2021 at 04:12 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.4.2
 
@@ -82,10 +82,9 @@ CREATE TABLE `parents_audio` (
 INSERT INTO `parents_audio` (`id`, `title`, `cover`, `audio_src`, `year`, `artist`) VALUES
 (1, 'That Boy Is Mine', 'aud1.png', 'aud1.mp3', 1998, 'Brandy and Monica'),
 (2, 'Livin\' On A Prayer', 'aud2.png', 'aud2.mp3', 1986, 'Bon Jovi'),
-(3, 'Dancing Queen', 'aud3.png', 'aud3.mp3', 1976, 'ABBA'),
-(4, 'Smells Like Teen Spirit', 'aud4.png', 'aud4.mp3', 1991, 'Nirvana'),
-(5, 'What A Wonderful World', 'aud5.png', 'aud5.mp3', 1967, 'Louis Armstrong'),
-(6, 'So What', 'aud6.png', 'aud6.mp3', 1959, 'Miles Davis');
+(3, 'Smells Like Teen Spirit', 'aud3.png', 'aud3.mp3', 1991, 'Nirvana'),
+(4, 'What A Wonderful World', 'aud4.png', 'aud4.mp3', 1967, 'Louis Armstrong'),
+(5, 'So What', 'aud5.png', 'aud5.mp3', 1959, 'Miles Davis');
 
 -- --------------------------------------------------------
 
@@ -110,14 +109,14 @@ CREATE TABLE `parents_movies` (
 
 INSERT INTO `parents_movies` (`movie_id`, `movie_cover`, `movie_title`, `movie_year`, `movie_runtime`, `movie_storyline`, `movie_trailer`, `video_type`) VALUES
 (1, '1.png', 'Monkey Trouble', '1994', '2h 16m', 'A young girl, Eva, befriends a monkey named Dodger and performs an entertainment act with him on the street. However, she soon finds out that Dodger is in fact a trained pickpocket.', 'monkey.mp4', 'movie'),
-(2, '2.png', 'After', '1999', '2h', 'Lorem Ipsum dolor.', 'after.mp4', 'movie'),
+(2, '2.png', 'Jerry Maguire', '1996', '2h', 'Sports agent Jerry Maguire tries to get back on his feet after being fired from his job. However, the only client he has is Rod Tidwell, a disgruntled football player who wants a better contract.', 'jerry.mp4', 'movie'),
 (3, '4.png', 'Men In Black', '1997', '1h 40m', 'K and J, (the men in black) are the scum-fighting super-agents; their latest mission is to save the world from a total intergalactic disaster.', 'mib.mp4', 'movie'),
-(4, '9.png', 'The Goonies', '1985', '2h', 'A group of west coast kids facing their last days together before a development paves over their homes stumble onto evidence of pirate\'s treasure attracting the attention of a family of criminals.', 'eddie.mp4', 'movie'),
+(4, '9.png', 'The Goonies', '1985', '2h', 'A group of west coast kids facing their last days together before a development paves over their homes stumble onto evidence of pirate\'s treasure attracting the attention of a family of criminals.', 'goonies.mp4', 'movie'),
 (5, '12.png', 'Boy Meets World', '1993', '1h 57m', 'With the help of true love Topanga, best friend Shawn and teacher Mr. Feeny, Cory Matthews juggles school, friends and romance. The series, a popular Friday night staple on ABC for seven seasons, began with Cory in the sixth grade and follows him and his entourage through their college years.', 'boy.mp4', 'movie'),
 (6, '13.png', 'The Green Mile', '1999', '2h', 'Paul Edgecomb, the head guard of a prison, meets an inmate, John Coffey, a black man who is accused of murdering two girls. His life changes drastically when he discovers that John has a special gift.', 'greenmile.mp4', 'movie'),
 (7, '14.png', 'Point Break', '1991', '1h 46m', 'FBI agent Johnny Utah infiltrates a group of surfers involved in a number of bank robberies. However, things get complicated when he befriends the gang\'s leader, Bodhi.', 'pointbreak.mp4', 'movie'),
 (8, '15.png', 'Waterworld', '1995', '2h', 'The polar ice caps have melted down and most of Earth is underwater. In this situation, a mutated mariner fights starvation and reluctantly helps a woman and a young girl find dry land.', 'water.mp4', 'movie'),
-(9, '16.png', 'How to Marry a Millionaire', '1953', '1h 30m', 'Drama movie about three women who are tired of cheap men and a lack of money. They intend to use all their talents to trap and marry three eligible millionaires, but find true love in the process.\r\n', 'cinemascope.mp4', 'movie'),
+(9, '16.png', 'How to Marry a Millionaire', '1953', '1h 30m', 'Drama movie about three women who are tired of cheap men and a lack of money. They intend to use all their talents to trap and marry three eligible millionaires, but find true love in the process.\r\n', 'marry.mp4', 'movie'),
 (10, '17.png', 'Groundhog Day', '1993', '2h ', 'Phil, a self-centred weatherman, goes to the town of Punxsutawney for an assignment. He is later shocked when he wakes up the next morning and realises that he is reliving the same day over and over.', 'groundhog.mp4', 'movie');
 
 -- --------------------------------------------------------
@@ -171,7 +170,7 @@ CREATE TABLE `tbl_arating` (
 
 INSERT INTO `tbl_arating` (`arating_id`, `arating_name`, `arating_desc`) VALUES
 (1, 'G', 'G – General Audiences\r\nAll ages admitted. Nothing that would offend parents for viewing by children. '),
-(2, 'PG', 'PG – Parental Guidance Suggested\r\nSome material may not be suitable for children. Parents urged to give  	&ldquo;parental guidance&rdquo;. '),
+(2, 'PG', 'PG – Parental Guidance Suggested\r\nSome material may not be suitable for children. Parents urged to give    &ldquo;parental guidance&rdquo;. '),
 (3, 'PG-13', 'PG-13 – Parents Strongly Cautioned\r\nSome material may be inappropriate for children under 13. Parents are urged to be cautious. Some material may be inappropriate for pre-teenagers.'),
 (4, 'R', 'R – Restricted\r\nUnder 17 requires accompanying parent or adult guardian. Contains some adult material. Parents are urged to learn more about the film before taking their young children with them. '),
 (5, 'NC-17', 'NC-17 – Adults Only\r\nNo One 17 and Under Admitted. Clearly adult. Children are not admitted. ');
@@ -190,8 +189,18 @@ CREATE TABLE `tbl_user` (
   `user_email` varchar(250) NOT NULL,
   `user_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `user_ip` varchar(50) NOT NULL DEFAULT 'no',
-  `user_admin` tinyint(4) DEFAULT NULL
+  `user_admin` tinyint(4) DEFAULT NULL,
+  `user_access` tinyint(4) DEFAULT NULL,
+  `user_avatar` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tbl_user`
+--
+
+INSERT INTO `tbl_user` (`user_id`, `user_fname`, `user_name`, `user_pass`, `user_email`, `user_date`, `user_ip`, `user_admin`, `user_access`, `user_avatar`) VALUES
+(1, 'trevor', 'user1', 'password', 't@t.com', '2019-02-01 19:07:35', '::1', 1, 5, 'parents.png'),
+(2, 'isabelle', 'user2', '123', 'i@i.ca', '2021-04-17 18:23:11', 'no', 0, NULL, 'kids.png');
 
 -- --------------------------------------------------------
 
@@ -301,7 +310,7 @@ ALTER TABLE `tbl_arating`
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `user_id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `user_id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `video_genre`
